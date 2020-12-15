@@ -1,4 +1,6 @@
 This is a custom user model
+using an email
+ 
 must run prior to us
 python manage.py makemigration
 python manage.py migrate
