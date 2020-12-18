@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.urls import path,include
 from django.conf import settings
 from django.conf.urls.static import static
-
+from travel.views import travel_views
 admin.site.site_header = 'Cromartie\'s project'                    # default: "Django Administration"
 admin.site.index_title = 'Features area'                 # default: "Site administration"
 admin.site.site_title = 'HTML title from adminsitration' 
@@ -12,6 +12,7 @@ urlpatterns = [
     path('accounts/',include('django.contrib.auth.urls')),
     path('html_format/', include('html_format.urls')),
     path('travel/',include('travel.urls')),
+    path('', travel_views,name='travel'),
 ]
 
 if settings.DEBUG: # new

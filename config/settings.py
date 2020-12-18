@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'accounts.apps.AccountsConfig',
     'html_format.apps.HtmlFormatConfig',
     'travel.apps.TravelConfig',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
